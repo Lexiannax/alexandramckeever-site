@@ -37,6 +37,11 @@
     .listen { display:flex; flex-wrap:wrap; gap:.75rem; margin-top:1rem; }
     .listen .btn { margin-top:0; }
     .note { font-size:.9rem; color:var(--muted); margin:.6rem 0 0; }
+    .releases { display:grid; gap:1.6rem; grid-template-columns:repeat(auto-fill,minmax(min(100%,13rem),1fr)); list-style:none; padding:0; margin:1.2rem 0 0; }
+    .releases img { width:100%; height:auto; aspect-ratio:1/1; object-fit:cover; display:block; border-radius:8px; border:1px solid var(--line); background:#fff; }
+    .releases h3 { font-family:"Cormorant Garamond",Georgia,serif; font-size:1.45rem; line-height:1.15; margin:.6rem 0 0; }
+    .releases .meta { margin:.1rem 0 0; color:var(--muted); font-size:.92rem; }
+    .btn.small { padding:.45rem 1.1rem; font-size:.95rem; margin-top:.6rem; }
     .art-empty { background:var(--wash); border:1px dashed #cfc6a4; border-radius:12px; padding:1.4rem; text-align:center; color:var(--muted); }
     .grid { display:grid; gap:1.4rem; grid-template-columns:repeat(auto-fill,minmax(min(100%,16rem),1fr)); list-style:none; padding:0; margin:0; }
     .grid img { width:100%; height:15rem; object-fit:cover; display:block; border:1px solid var(--line); border-radius:6px; background:#fff; }
@@ -52,6 +57,7 @@
   <header>
     <nav aria-label="Main">
       <a href="#music">Music</a>
+      <a href="#releases">Releases</a>
       <a href="#art">Art</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -78,6 +84,141 @@
         </div>
         <p class="note">The player is provided by Spotify, which may set its own cookies when you press play. If the player does not play for you, use the buttons above.</p>
       </section>
+
+      <!-- releases:start -->
+      <section id="releases" aria-labelledby="rel-h">
+        <h2 id="rel-h">Releases</h2>
+        <p class="lede">Pick your favorite service. Each button opens a page with every place to listen.</p>
+        <ul class="releases">
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/house-of-glass"><img src="images/house-of-glass.jpg" alt="Cover art for House of Glass by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>House of Glass</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/house-of-glass">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/light-across-the-ages"><img src="images/light-across-the-ages.jpg" alt="Cover art for Light Across The Ages by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Light Across The Ages</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/light-across-the-ages">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/sazan"><img src="images/sazan.jpg" alt="Cover art for Sazan by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Sazan</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/sazan">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/click-smart-click-kind"><img src="images/click-smart-click-kind.jpg" alt="Cover art for Click Smart, Click Kind by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Click Smart, Click Kind</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/click-smart-click-kind">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/hope"><img src="images/hope.jpg" alt="Cover art for HOPE by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>HOPE</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/hope">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/saddle-up-slow"><img src="images/saddle-up-slow.jpg" alt="Cover art for Saddle Up (Slow) by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Saddle Up (Slow)</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/saddle-up-slow">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/times-have-changed"><img src="images/times-have-changed.jpg" alt="Cover art for Times Have Changed by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Times Have Changed</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/times-have-changed">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/same-old-song"><img src="images/same-old-song.jpg" alt="Cover art for SAME OLD SONG by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>SAME OLD SONG</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/same-old-song">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/the-glimpse"><img src="images/the-glimpse.jpg" alt="Cover art for The Glimpse by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>The Glimpse</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/the-glimpse">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/let-peace-come-to-ukraine"><img src="images/let-peace-come-to-ukraine.jpg" alt="Cover art for Let Peace Come To Ukraine by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Let Peace Come To Ukraine</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/let-peace-come-to-ukraine">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/gulf-of-glass"><img src="images/gulf-of-glass.jpg" alt="Cover art for GULF OF GLASS by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>GULF OF GLASS</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/gulf-of-glass">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/not-for-sale-lone-star"><img src="images/not-for-sale-lone-star.jpg" alt="Cover art for Not For Sale Lone Star by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Not For Sale Lone Star</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/not-for-sale-lone-star">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/pull-the-plug"><img src="images/pull-the-plug.jpg" alt="Cover art for PULL THE PLUG by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>PULL THE PLUG</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/pull-the-plug">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/loyalty-is-a-resume"><img src="images/loyalty-is-a-resume.jpg" alt="Cover art for Loyalty is a Resume by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Loyalty is a Resume</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/loyalty-is-a-resume">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/welcome-to-the-reality-show"><img src="images/welcome-to-the-reality-show.jpg" alt="Cover art for Welcome to the Reality Show by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Welcome to the Reality Show</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/welcome-to-the-reality-show">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/keep-the-door"><img src="images/keep-the-door.jpg" alt="Cover art for Keep The Door by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Keep The Door</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/keep-the-door">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/the-playbook-written-in-frost"><img src="images/the-playbook-written-in-frost.jpg" alt="Cover art for The Playbook written in Frost by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>The Playbook written in Frost</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/the-playbook-written-in-frost">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/we-carry-on-daniel-boone"><img src="images/we-carry-on-daniel-boone.jpg" alt="Cover art for We Carry On, Daniel Boone by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>We Carry On, Daniel Boone</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/we-carry-on-daniel-boone">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/same-old-water"><img src="images/same-old-water.jpg" alt="Cover art for SAME OLD WATER by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>SAME OLD WATER</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/same-old-water">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/oil"><img src="images/oil.jpg" alt="Cover art for Oil by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Oil</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/oil">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/out-of-the-cave"><img src="images/out-of-the-cave.jpg" alt="Cover art for OUT OF THE CAVE by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>OUT OF THE CAVE</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/out-of-the-cave">Listen</a>
+          </li>
+        </ul>
+      </section>
+      <!-- releases:end -->
 
       <section id="art" aria-labelledby="art-h">
         <h2 id="art-h">Art</h2>
