@@ -41,6 +41,9 @@
     .releases img { width:100%; height:auto; aspect-ratio:1/1; object-fit:cover; display:block; border-radius:8px; border:1px solid var(--line); background:#fff; }
     .releases h3 { font-family:"Cormorant Garamond",Georgia,serif; font-size:1.45rem; line-height:1.15; margin:.6rem 0 0; }
     .releases .meta { margin:.1rem 0 0; color:var(--muted); font-size:.92rem; }
+    .releases.collapsed .more { display:none; }
+    .more-wrap { margin:1.6rem 0 0; text-align:center; }
+    .more-wrap .btn { margin-top:0; cursor:pointer; border:0; font:inherit; font-weight:700; }
     .btn.small { padding:.45rem 1.1rem; font-size:.95rem; margin-top:.6rem; }
     .art-empty { background:var(--wash); border:1px dashed #cfc6a4; border-radius:12px; padding:1.4rem; text-align:center; color:var(--muted); }
     .grid { display:grid; gap:1.4rem; grid-template-columns:repeat(auto-fill,minmax(min(100%,16rem),1fr)); list-style:none; padding:0; margin:0; }
@@ -89,12 +92,24 @@
       <section id="releases" aria-labelledby="rel-h">
         <h2 id="rel-h">Releases</h2>
         <p class="lede">Pick your favorite service. Each button opens a page with every place to listen.</p>
-        <ul class="releases">
+        <ul class="releases collapsed" id="releases-list">
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/track-5-seventy-boats"><img src="images/track-5-seventy-boats.jpg" alt="Cover art for Track 5: Seventy Boats by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Track 5: Seventy Boats</h3>
+            <p class="meta">Single &middot; November 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/track-5-seventy-boats">Listen</a>
+          </li>
           <li>
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/track-6-what-stood-here"><img src="images/track-6-what-stood-here.jpg" alt="Cover art for Track 6: What Stood Here by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Track 6: What Stood Here</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/track-6-what-stood-here">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/track-4-sixty-eight-thousand"><img src="images/track-4-sixty-eight-thousand.jpg" alt="Cover art for Track 4: Sixty-Eight-Thousand by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Track 4: Sixty-Eight-Thousand</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/track-4-sixty-eight-thousand">Listen</a>
           </li>
           <li>
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/house-of-glass"><img src="images/house-of-glass.jpg" alt="Cover art for House of Glass by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
@@ -103,10 +118,22 @@
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/house-of-glass">Listen</a>
           </li>
           <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/the-empathy-economy"><img src="images/the-empathy-economy.jpg" alt="Cover art for The Empathy Economy by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>The Empathy Economy</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/the-empathy-economy">Listen</a>
+          </li>
+          <li>
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/track-7-paid-on-the-record"><img src="images/track-7-paid-on-the-record.jpg" alt="Cover art for Track 7: Paid on the Record by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Track 7: Paid on the Record</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/track-7-paid-on-the-record">Listen</a>
+          </li>
+          <li>
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/track-3-horse-at-the-mountain"><img src="images/track-3-horse-at-the-mountain.jpg" alt="Cover art for Track 3: Horse at the Mountain by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Track 3: Horse at the Mountain</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/track-3-horse-at-the-mountain">Listen</a>
           </li>
           <li>
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/light-across-the-ages"><img src="images/light-across-the-ages.jpg" alt="Cover art for Light Across The Ages by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
@@ -138,223 +165,292 @@
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/saddle-up-slow">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/times-have-changed"><img src="images/times-have-changed.jpg" alt="Cover art for Times Have Changed by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Times Have Changed</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/times-have-changed">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/same-old-song"><img src="images/same-old-song.jpg" alt="Cover art for SAME OLD SONG by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>SAME OLD SONG</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/same-old-song">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/the-glimpse"><img src="images/the-glimpse.jpg" alt="Cover art for The Glimpse by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>The Glimpse</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/the-glimpse">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/let-peace-come-to-ukraine"><img src="images/let-peace-come-to-ukraine.jpg" alt="Cover art for Let Peace Come To Ukraine by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Let Peace Come To Ukraine</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/let-peace-come-to-ukraine">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/gulf-of-glass"><img src="images/gulf-of-glass.jpg" alt="Cover art for GULF OF GLASS by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>GULF OF GLASS</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/gulf-of-glass">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/not-for-sale-lone-star"><img src="images/not-for-sale-lone-star.jpg" alt="Cover art for Not For Sale Lone Star by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Not For Sale Lone Star</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/not-for-sale-lone-star">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/pull-the-plug"><img src="images/pull-the-plug.jpg" alt="Cover art for PULL THE PLUG by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>PULL THE PLUG</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/pull-the-plug">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/bloopers-in-the-barnyard"><img src="images/bloopers-in-the-barnyard.jpg" alt="Cover art for Bloopers in the Barnyard by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Bloopers in the Barnyard</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/bloopers-in-the-barnyard">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/loyalty-is-a-resume"><img src="images/loyalty-is-a-resume.jpg" alt="Cover art for Loyalty is a Resume by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Loyalty is a Resume</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/loyalty-is-a-resume">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/welcome-to-the-reality-show"><img src="images/welcome-to-the-reality-show.jpg" alt="Cover art for Welcome to the Reality Show by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Welcome to the Reality Show</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/welcome-to-the-reality-show">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/keep-the-door"><img src="images/keep-the-door.jpg" alt="Cover art for Keep The Door by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Keep The Door</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/keep-the-door">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/the-playbook-written-in-frost"><img src="images/the-playbook-written-in-frost.jpg" alt="Cover art for The Playbook written in Frost by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>The Playbook written in Frost</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/the-playbook-written-in-frost">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/we-carry-on-daniel-boone"><img src="images/we-carry-on-daniel-boone.jpg" alt="Cover art for We Carry On, Daniel Boone by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>We Carry On, Daniel Boone</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/we-carry-on-daniel-boone">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/same-old-water"><img src="images/same-old-water.jpg" alt="Cover art for SAME OLD WATER by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>SAME OLD WATER</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/same-old-water">Listen</a>
           </li>
-          <li>
+          <li class="more">
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/track-2-nine-hundred-pages"><img src="images/track-2-nine-hundred-pages.jpg" alt="Cover art for Track 2: Nine Hundred Pages by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Track 2: Nine Hundred Pages</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/track-2-nine-hundred-pages">Listen</a>
+          </li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/front-page-for-sale"><img src="images/front-page-for-sale.jpg" alt="Cover art for Front Page for Sale by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Front Page for Sale</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/front-page-for-sale">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/light-up-the-darkness"><img src="images/light-up-the-darkness.jpg" alt="Cover art for LIGHT UP THE DARKNESS by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>LIGHT UP THE DARKNESS</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/light-up-the-darkness">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/oil"><img src="images/oil.jpg" alt="Cover art for Oil by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Oil</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/oil">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/out-of-the-cave"><img src="images/out-of-the-cave.jpg" alt="Cover art for OUT OF THE CAVE by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>OUT OF THE CAVE</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/out-of-the-cave">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/not-anymore"><img src="images/not-anymore.jpg" alt="Cover art for NOT ANYMORE by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>NOT ANYMORE</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/not-anymore">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/freedom-is-a-rhythm"><img src="images/freedom-is-a-rhythm.jpg" alt="Cover art for Freedom is a Rhythm by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Freedom is a Rhythm</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/freedom-is-a-rhythm">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/warrant-season"><img src="images/warrant-season.jpg" alt="Cover art for Warrant Season by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Warrant Season</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/warrant-season">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/eddy-and-jones"><img src="images/eddy-and-jones.jpg" alt="Cover art for EDDY AND JONES by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>EDDY AND JONES</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/eddy-and-jones">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/out-in-the-open-barn"><img src="images/out-in-the-open-barn.jpg" alt="Cover art for Out in the Open Barn by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Out in the Open Barn</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/out-in-the-open-barn">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/falling-down-on-the-way-up"><img src="images/falling-down-on-the-way-up.jpg" alt="Cover art for Falling Down on the Way Up by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Falling Down on the Way Up</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/falling-down-on-the-way-up">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/night-boat"><img src="images/night-boat.jpg" alt="Cover art for NIGHT BOAT by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>NIGHT BOAT</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/night-boat">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/the-public-record"><img src="images/the-public-record.jpg" alt="Cover art for The Public Record by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>The Public Record</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/the-public-record">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/stand-tall-small-nations"><img src="images/stand-tall-small-nations.jpg" alt="Cover art for Stand Tall, Small Nations by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Stand Tall, Small Nations</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/stand-tall-small-nations">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/the-sun-on-white-stone"><img src="images/the-sun-on-white-stone.jpg" alt="Cover art for The Sun on White Stone by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>The Sun on White Stone</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/the-sun-on-white-stone">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/hard-roads-ahead"><img src="images/hard-roads-ahead.jpg" alt="Cover art for HARD ROADS AHEAD by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>HARD ROADS AHEAD</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/hard-roads-ahead">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/cheaper-diesel"><img src="images/cheaper-diesel.jpg" alt="Cover art for Cheaper Diesel by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Cheaper Diesel</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/cheaper-diesel">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/not-any-more"><img src="images/not-any-more.jpg" alt="Cover art for Not Any More by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Not Any More</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/not-any-more">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/take-your-time"><img src="images/take-your-time.jpg" alt="Cover art for Take Your Time by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Take Your Time</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/take-your-time">Listen</a>
           </li>
-          <li>
+          <li class="more">
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/raccoon-boot-camp"><img src="images/raccoon-boot-camp.jpg" alt="Cover art for Raccoon Boot Camp! by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Raccoon Boot Camp!</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/raccoon-boot-camp">Listen</a>
+          </li>
+          <li class="more">
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/pocket-full-of-odds"><img src="images/pocket-full-of-odds.jpg" alt="Cover art for Pocket Full Of Odds by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Pocket Full Of Odds</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/pocket-full-of-odds">Listen</a>
+          </li>
+          <li class="more">
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/fables-outlive-foxes"><img src="images/fables-outlive-foxes.jpg" alt="Cover art for Fables Outlive Foxes by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Fables Outlive Foxes</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/fables-outlive-foxes">Listen</a>
+          </li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/dancing-on-air"><img src="images/dancing-on-air.jpg" alt="Cover art for Dancing on Air by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>Dancing on Air</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/dancing-on-air">Listen</a>
           </li>
-          <li>
+          <li class="more">
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/track-1-the-ledger"><img src="images/track-1-the-ledger.jpg" alt="Cover art for Track 1: The Ledger by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Track 1: The Ledger</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/track-1-the-ledger">Listen</a>
+          </li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/love-me-in-daylightfire-in-snow"><img src="images/love-me-in-daylightfire-in-snow.jpg" alt="Cover art for LOVE ME IN DAYLIGHT(Fire in Snow) by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>LOVE ME IN DAYLIGHT(Fire in Snow)</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/love-me-in-daylightfire-in-snow">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/borrowed-youth"><img src="images/borrowed-youth.jpg" alt="Cover art for BORROWED YOUTH by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>BORROWED YOUTH</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/borrowed-youth">Listen</a>
           </li>
-          <li>
+          <li class="more">
             <a href="https://distrokid.com/hyperfollow/alexandramckeever/the-sixth"><img src="images/the-sixth.jpg" alt="Cover art for THE SIXTH by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
             <h3>THE SIXTH</h3>
             <p class="meta">Single &middot; October 2026</p>
             <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/the-sixth">Listen</a>
           </li>
+          <li class="more">
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/fair-erin"><img src="images/fair-erin.jpg" alt="Cover art for Fair Erin by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Fair Erin</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/fair-erin">Listen</a>
+          </li>
+          <li class="more">
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/we-see-code"><img src="images/we-see-code.jpg" alt="Cover art for We See Code! by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>We See Code!</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/we-see-code">Listen</a>
+          </li>
+          <li class="more">
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/hallejujah-debt"><img src="images/hallejujah-debt.jpg" alt="Cover art for Hallejujah Debt by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Hallejujah Debt</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/hallejujah-debt">Listen</a>
+          </li>
+          <li class="more">
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/ask-me-first"><img src="images/ask-me-first.jpg" alt="Cover art for Ask Me First! by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Ask Me First!</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/ask-me-first">Listen</a>
+          </li>
+          <li class="more">
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/the-hills-above-lough-mask"><img src="images/the-hills-above-lough-mask.jpg" alt="Cover art for The Hills Above Lough Mask! by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>The Hills Above Lough Mask!</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/the-hills-above-lough-mask">Listen</a>
+          </li>
+          <li class="more">
+            <a href="https://distrokid.com/hyperfollow/alexandramckeever/take-your-life-in-your-own-two-hands"><img src="images/take-your-life-in-your-own-two-hands.jpg" alt="Cover art for Take Your Life in Your Own Two Hands! by Alexandra McKeever" width="600" height="600" loading="lazy" /></a>
+            <h3>Take Your Life in Your Own Two Hands!</h3>
+            <p class="meta">Single &middot; October 2026</p>
+            <a class="btn small" href="https://distrokid.com/hyperfollow/alexandramckeever/take-your-life-in-your-own-two-hands">Listen</a>
+          </li>
         </ul>
+        <p class="more-wrap"><button type="button" class="btn" id="show-all" aria-expanded="false" aria-controls="releases-list">Show all 59 releases</button></p>
+        <noscript><style>.releases .more{display:block !important}</style></noscript>
+        <script>(function(){var b=document.getElementById("show-all"),l=document.getElementById("releases-list");if(!b)return;b.addEventListener("click",function(){var c=l.classList.toggle("collapsed");b.textContent=c?"Show all 59 releases":"Show fewer";b.setAttribute("aria-expanded",String(!c));});})();</script>
       </section>
       <!-- releases:end -->
 
