@@ -26,6 +26,9 @@ for slug in sys.argv[1:]:
             if sp:
                 o = json.loads(get('https://open.spotify.com/oembed?url=https://open.spotify.com/album/' + sp.group(1)))
                 art = o.get('thumbnail_url')
+                pg = get('https://open.spotify.com/album/' + sp.group(1)).decode('utf-8', 'replace')
+                dm = re.search(r'<meta[^>]+name="music:release_date"[^>]*content="([^"]*)"', pg)
+                if dm: date = dm.group(1)
         if not art: print(slug, '| no cover art found, skipped'); continue
         im = Image.open(io.BytesIO(get(art))).convert('RGB'); im.thumbnail((600, 600), Image.LANCZOS)
         im.save('images/%s.jpg' % slug, 'JPEG', quality=84, optimize=True, progressive=True)
